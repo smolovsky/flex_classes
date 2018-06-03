@@ -1,0 +1,178 @@
+
+
+.flex-col
+  display: flex
+  flex-direction: column
+
+.flex-col-center
+  display: flex
+  flex-direction: column
+  align-items: center
+
+
+.flex-row
+  display: flex
+  flex-direction: row
+
+.flex-row-center
+  display: flex
+  flex-direction: row
+  align-items: center
+
+.flex-row-center-center
+  display: flex
+  flex-direction: row
+  align-items: center
+  justify-content: center
+
+.flex-row-margin-10
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  align-items: center
+
+  margin: 10px
+
+
+
+
+.flex
+  display: flex
+  box-sizing: border-box
+
+  $def-m-h: 10px
+  $def-m-v: 6px
+  $def-m: $def-m-v $def-m-h
+
+  $def-p-h: 10px
+  $def-p-v: 6px
+  $def-p: $def-p-v $def-p-h
+
+
+  &.row
+    flex-direction: row
+
+    &.center
+      justify-content: center
+
+    &.middle
+      align-items: center
+
+    &.bottom
+      align-items: flex-end
+
+    &.top
+      align-items: flex-start
+
+    &.stretch
+      align-items: stretch
+
+    &.childs-m
+      & > *
+        margin: $def-m
+
+
+
+  &.col
+    flex-direction: column
+
+    &.center
+      align-items: center
+
+    &.middle
+      justify-content: center
+
+    &.bottom
+      justify-content: flex-end
+
+    &.top
+      justify-content: flex-start
+
+    &.stretch
+      align-items: stretch
+
+    &.childs-m
+      & > *
+        margin: $def-m
+
+
+  &.space-between
+    justify-content: space-between
+
+  &.can-wrap
+    flex-wrap: wrap
+
+  &.eq-childs
+    & > *
+      flex: 1 1
+
+
+
+
+
+
+  // ------------------------
+  //         margins
+  // ------------------------
+  &.m
+    margin: $def-m
+
+  &.m-v
+    margin-top: $def-m-v
+    margin-bottom: $def-m-v
+
+  &.m-h
+    margin-left: $def-m-h
+    margin-right: $def-m-h
+
+
+  &.m-top
+    margin-top: $def-m-v
+
+  &.m-bottom
+    margin-bottom: $def-m-v
+
+  &.childs-m-h
+    & > *
+      margin-left: $def-m-h
+      margin-right: $def-m-h
+
+  &.childs-m-v
+    & > *
+      margin-top: $def-m-v
+      margin-bottom: $def-m-v
+
+  // ------------------------
+  //         paddings
+  // ------------------------
+  &.p
+    padding: $def-p
+
+  &.p-top
+    padding-top: $def-p-v
+
+  &.p-bottom
+    padding-bottom: $def-p-v
+
+  &.p-v
+    padding-top: $def-p-v
+    padding-bottom: $def-p-v
+
+  &.p-h
+    padding-left: $def-p-h
+    padding-right: $def-p-h
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
