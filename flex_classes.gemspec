@@ -8,9 +8,10 @@ Gem::Specification.new do |spec|
   spec.version       = FlexClasses::VERSION
   spec.authors       = ["Kiryl Smalouski"]
   spec.email         = ["urglokki@gmail.com"]
-
+  spec.licenses    = ['MIT']
   spec.summary       = %q{CSS classes for easy creating page structure without overhead app-stylesheet.}
   spec.homepage      = 'https://github.com/smolovsky/flex_classes'
+  spec.metadata    = { "source_code_uri" => "https://github.com/smolovsky/flex_classes" }
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
   # to allow pushing to a single host or delete this section to allow pushing to any host.
