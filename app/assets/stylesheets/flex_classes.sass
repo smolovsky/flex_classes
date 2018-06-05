@@ -23,19 +23,14 @@
     &.middle
       align-items: center
 
-    &.bottom
-      align-items: flex-end
-
     &.top
       align-items: flex-start
 
+    &.bottom
+      align-items: flex-end
+
     &.stretch
       align-items: stretch
-
-    &.childs-m
-      & > *
-        margin: $def-m
-
 
   &.col
     flex-direction: column
@@ -46,18 +41,14 @@
     &.middle
       justify-content: center
 
-    &.bottom
-      justify-content: flex-end
-
     &.top
       justify-content: flex-start
 
+    &.bottom
+      justify-content: flex-end
+
     &.stretch
       align-items: stretch
-
-    &.childs-m
-      & > *
-        margin: $def-m
 
 
   &.space-between
@@ -91,6 +82,10 @@
 
   &.m-bottom
     margin-bottom: $def-m-v
+
+  &.childs-m
+    & > *
+      margin: $def-m
 
   &.childs-m-h
     & > *
