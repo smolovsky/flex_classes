@@ -8,18 +8,18 @@ $flex-classes-margin-vertical: 6px !default
 $flex-classes-margin-horizontal: 10px !default
 
 $flex-classes-padding-vertical: 6px !default
-$flex-classes-padding-vertical: 10px !default
+$flex-classes-padding-horizontal: 10px !default
 
 .flex
   display: flex
   box-sizing: border-box
 
-  $fc-m-h: 10px
-  $fc-m-v: 6px
+  $fc-m-v: $flex-classes-margin-vertical
+  $fc-m-h: $flex-classes-margin-horizontal
   $fc-m: $fc-m-v $fc-m-h
 
-  $fc-p-h: 10px
-  $fc-p-v: 6px
+  $fc-p-v: $flex-classes-padding-vertical
+  $fc-p-h: $flex-classes-padding-horizontal
   $fc-p: $fc-p-v $fc-p-h
 
 
