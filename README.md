@@ -26,16 +26,22 @@ After it import 'flex_classes' into your sass stylesheet
 
 ## Usage
 
-### align child nodes at middle
+### Align child nodes at middle
+**HTML**
+
 ```html
 <div class="flex row middle">
 ```
+
+**HAML**
 
 ```haml
 .flex.row.middle
 ```
 
-### add vertical margins, allow wrap, align child nodes at center middle with margins
+### Add vertical margins, allow wrap, align child nodes at center middle with margins
+
+**HAML**
 ```haml
 .flex.row.center.middle.m-v.childs-m.can-wrap
 ```
@@ -43,7 +49,7 @@ After it import 'flex_classes' into your sass stylesheet
 
 ## List all classes
 
-### base
+### Base
 class | description
 ---   | ---
 flex  | display: flex; and allow to use all other classes
@@ -51,7 +57,7 @@ row   | flex-direction: row
 col   | flex-direction: column
 
 
-### align
+### Align
 These classes works only with "row" or "col" class.
 Distribute content of flex col/row at middle/center/bottom/top of container frame.
 
@@ -64,7 +70,7 @@ bottom   | "align-items: flex-end" for rows and "justify-content: flex-end" for 
 stretch  | full width for flex-col and full height for flex-row
 
 
-### margins
+### Margins
 class | description
 --- | ---
 m         | all sides
@@ -74,7 +80,7 @@ m-top     | only top
 m-bottom  | only bottom
 
 
-### margins for child nodes
+### Margins for child nodes
 class | description
 --- | ---
 childs-m    | all sides
@@ -82,7 +88,7 @@ childs-m-h  | horizontal for children
 childs-m-v  | vertical for children 
 
 
-### paddings
+### Paddings
 class | description
 --- | ---
 p         | all sides
@@ -92,7 +98,7 @@ p-top     | only top
 p-bottom  | only bottom
 
 
-### other
+### Other
 class | description
 --- | ---
 can-wrap      | flex-wrap: wrap
