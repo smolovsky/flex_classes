@@ -1,17 +1,26 @@
 // MIT License
 // Copyright (c) 2018 Kiryl Smalouski
 
+
+// allow set values in app. 
+// require @import instead require in app-stylesheet
+$flex-classes-margin-vertical: 6px !default
+$flex-classes-margin-horizontal: 10px !default
+
+$flex-classes-padding-vertical: 6px !default
+$flex-classes-padding-vertical: 10px !default
+
 .flex
   display: flex
   box-sizing: border-box
 
-  $def-m-h: 10px
-  $def-m-v: 6px
-  $def-m: $def-m-v $def-m-h
+  $fc-m-h: 10px
+  $fc-m-v: 6px
+  $fc-m: $fc-m-v $fc-m-h
 
-  $def-p-h: 10px
-  $def-p-v: 6px
-  $def-p: $def-p-v $def-p-h
+  $fc-p-h: 10px
+  $fc-p-v: 6px
+  $fc-p: $fc-p-v $fc-p-h
 
 
   &.row
@@ -66,57 +75,57 @@
   //         margins
   // ------------------------
   &.m
-    margin: $def-m
+    margin: $fc-m
 
   &.m-v
-    margin-top: $def-m-v
-    margin-bottom: $def-m-v
+    margin-top: $fc-m-v
+    margin-bottom: $fc-m-v
 
   &.m-h
-    margin-left: $def-m-h
-    margin-right: $def-m-h
+    margin-left: $fc-m-h
+    margin-right: $fc-m-h
 
 
   &.m-top
-    margin-top: $def-m-v
+    margin-top: $fc-m-v
 
   &.m-bottom
-    margin-bottom: $def-m-v
+    margin-bottom: $fc-m-v
 
   &.childs-m
     & > *
-      margin: $def-m
+      margin: $fc-m
 
   &.childs-m-h
     & > *
-      margin-left: $def-m-h
-      margin-right: $def-m-h
+      margin-left: $fc-m-h
+      margin-right: $fc-m-h
 
   &.childs-m-v
     & > *
-      margin-top: $def-m-v
-      margin-bottom: $def-m-v
+      margin-top: $fc-m-v
+      margin-bottom: $fc-m-v
 
 
   // ------------------------
   //         paddings
   // ------------------------
   &.p
-    padding: $def-p
+    padding: $fc-p
 
   &.p-top
-    padding-top: $def-p-v
+    padding-top: $fc-p-v
 
   &.p-bottom
-    padding-bottom: $def-p-v
+    padding-bottom: $fc-p-v
 
   &.p-v
-    padding-top: $def-p-v
-    padding-bottom: $def-p-v
+    padding-top: $fc-p-v
+    padding-bottom: $fc-p-v
 
   &.p-h
-    padding-left: $def-p-h
-    padding-right: $def-p-h
+    padding-left: $fc-p-h
+    padding-right: $fc-p-h
 
 
 
